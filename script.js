@@ -20,7 +20,7 @@ function save() {
 }
 
 function add_score() {
-    y += 2
+    y += 1
     if(y >= 10) {
         y = 10
     }
