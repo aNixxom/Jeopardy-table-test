@@ -5,7 +5,7 @@ body {
 .player-name {
     color: yellow;
     border: 2px solid red;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 
