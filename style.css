@@ -1,15 +1,87 @@
+:root {
+    /* Blue Theme  (default)*/
+    --theme-blue-points-color: #d7a04b;
+    --theme-blue-box-background-color: #010a78;
+    --theme-blue-font: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --theme-blue-settings-header-color:white;
+
+    /* Global Styling */
+    --global-box-font-size: 58px;
+    --global-box-borders: black solid 2px;
+    --global-border-radius: 4px;  
+
+    user-select: none;
+}
+
 body {
-    background-color: #333;
+    background-color: black;
+    border: 2px transparent solid;
+    margin: auto;
+    height: 99.5vh;
 }
 
-.player-name {
+.player-info-table {
+    table-layout: fixed;
+    width: 100%;
+    padding-top: 11px;
+}
+
+.headers {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 60px;
+    border-radius: var(--global-border-radius);
+    width: 25%;
+    border: var(--global-box-borders);
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--theme-blue-box-background-color);
+    color: white;
+    padding: 5px;
+}
+
+.score_boxes {
+    width: 25%;
+    font-size: var(--global-box-font-size);
+    border-radius: var(--global-border-radius);
+    border: var(--global-box-borders);
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-color: var(--theme-blue-box-background-color);
+    color: var(--theme-blue-points-color);
+}
+
+.points-button,.data-button{
+    margin: 2px;
+    text-transform: uppercase;
+    background-color: var(--theme-blue-box-background-color);
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    color: var(--theme-blue-points-color);
+    font-size: 20px;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #d7a04b;
+}
+
+button:active {
+    background-color: #0614c1;
+}
+
+th {
     color: yellow;
-    border: 2px solid red;
-    border-radius: 4px;
 }
-
-
 
 p {
-    color: red;
+    color: yellow;
 }
